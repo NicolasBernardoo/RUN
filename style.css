@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: white;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+}
+body {
+  background-image: url(./img/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  width: 640px;
+  margin: auto;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+#profile img {
+  width: 190px;
+  position: top center;
+  padding: 20px;
+}
+#profile p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 8px;
+}
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 24px;
+  background-color: var(--surface-color);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+footer {
+  text-align: center;
+  padding: 24px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./img/Background.jpg);
+  }
+}
